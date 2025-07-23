@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Joyson Estibeiro | Detecting Volcanic Activity Using a Custom Google Earth Engine Python API script</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+    <!--- Navigation Bar --->
+<body>
+  <nav>
+    <div class="navbar" id="mynavbar">
+      <a href="../index.html">HOME</a>
+      <a href="../about.html">ABOUT ME</a>      
+      <a href="../portfolio.html" class="active">PORTFOLIO</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </nav>
+  <!--- Section 1: Title --->
+  <div class="about_me_title">
+    <div class="about_me_text">
+      <h1>PORTFOLIO</h1>
+    </div>
+  </div>
+  <!--- Section 2: Project Title & Website Image --->
+  <!-- Desktop -->
+  <div style="background-color: var(--alternative)">
+  <div style="max-width: 1600px; margin: 0 auto !important; float: none !important;">
+  <div class="grid_background_col2">
+    <div class="desktop">
+      <div class="about_cont">
+        <div class="about-left">
+          <img src="../joy_images/Jupyter Lab snippet- Iceland.jpg" class="project-image">
+        </div>
+        <div class="about-right">
+          <div class="about-text">
+            <h2 style="text-align:center; padding-bottom: 5px; color: var(--darktext); font-size: 28px;font-weight: bold; font-family: 'Montserrat', sans-serif;">Detecting Volcanic Activity Using a Custom Google Earth Engine Python API script</h2>
+          <h3 style="font-style: italic; text-align: center; font-weight:normal;"><i>Detecting scenes with potential Thermal anomalies from the bulk of Sentinel-2 data using the Normalized Hotspot Index (NHI)</i></h3>
+          </div>
+          <div class="button_buffer">
+            <a class="button_blk" href="https://github.com/JoysonEstibeiro/GEE-Python-API-script---Volcano-detection/blob/main/hotspot_detection_S2_imagery.ipynb">GEE Python API script</a>
+          </div>
+          <div class="button_buffer">
+            <a class="button_blk" href="https://arcg.is/10XuHy2">ArcGIS Storymap- Iceland Volcanoes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <!-- Tablet & Mobile-->
+    <div class="tablet_device_1000px">
+      <div class="project_tablet_cont">
+        <div class="project-tablet-left">
+          <img src="../joy_images/Jupyter Lab snippet- Iceland.jpg" class="project-tablet-image">
+        </div>
+        <div class="project-tablet-right">
+          <div class="project-tablet-text">
+            <h2 style="text-align:center; padding-bottom: 5px; color: var(--darktext); font-size: 36px;font-weight: bold; font-family: 'Montserrat', sans-serif;">Detecting Volcanic Activity Using a Custom Google Earth Engine Python API script</h2>
+          <h3 style="font-style: italic; text-align: center; font-weight:normal;"><i>Detecting scenes with potential Thermal anomalies from the bulk of Sentinel-2 data using the Normalized Hotspot Index (NHI)</i></h3>
+          </div>
+          <div class="button_buffer">
+            <a class="button_blk" href="https://github.com/JoysonEstibeiro/GEE-Python-API-script---Volcano-detection/blob/main/hotspot_detection_S2_imagery.ipynb">GEE Python API script</a>
+          </div>
+          <div class="button_buffer">
+            <a class="button_blk" href="https://arcg.is/10XuHy2">ArcGIS Storymap- Iceland Volcanoes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Section 4: Project Links -->
+  <div style="background-color: var(--alternative)">
+  <div style="max-width: 1600px; margin: 0 auto !important; float: none !important;">
+  <div class="grid_background_col2">
+    <p style="color: var(--darktext); font-family: 'Montserrat', sans-serif;"><b>Project Description:</b></p>
+    <p style="padding-bottom: 20px;">This project presents a custom Python script built using the Google Earth Engine (GEE) API to detect volcanic activity from Sentinel-2 imagery in user-defined areas and timeframes. By setting three key parameters i.e. (i) location, (ii) Date range, and (iii) NHI threshold, the script automates the processing and filtering of Sentinel-2 data.<br>
+It applies the Normalized Hotspot Index (NHI) to SWIR and NIR bands (B12, B11, B8A), based on the method proposed by Marchese et al. (2019), to identify thermal anomalies associated with volcanic activity. The script was run for several volcanic sites in Iceland (2020–2024) and the results include a detailed ArcGIS StoryMap highlighting time-series visualization of key eruption zones showcasing spatial patterns and impacts.<br>
+    <br>
+    Data processing and filters used in the script include:<br>
+    i) Loading Sentinel-2 Level 1C dataset (Top-of-atmosphere reflectances).<br>
+    ii) Clipping dataset to Area of Interest (AOI).<br>
+    iii) Attaching acquisition dates to each image. <br>
+    iv) Converting reflectance to radiance for bands of interest (Because thermal sensors measure emitted energy, not reflected sunlight).<br>
+    v) Calculating and Adding NHI index Bands.<br>
+    vi) Filtering scenes with Maximum B12 Radiance > 2 (Discriminates volcanic activity from cooler surfaces & Reduces false positives.<br>
+    vii) Filtering scenes using a threshold NHI value (e.g., 0.2) (To minimize false positives).<br>
+
+    </p>
+    <p style="font-size: 14px;">
+        <i>Reference: Marchese, F., Genzano, N., Neri, M., Falconieri, A., Mazzeo, G. and Pergola, N., 2019. 
+  A multi-channel algorithm for mapping volcanic thermal anomalies by means of Sentinel-2 MSI and Landsat-8 OLI data. 
+  <u>Remote Sensing</u>, 11(23), p.2876.</i></p>
+  </div>
+  </div>
+  </div>
+  <!--- Section 3: Project Information --->
+  <!-- Desktop -->
+  <div style="background-color: var(--lightmain)">
+  <div style="max-width: 1600px; margin: 0 auto !important; float: none !important;">
+  <div class="desktop">
+    <div class="grid_background_col">
+      <div class="proj-info-cont" style="text-align:left;">
+        <div class="about_cont">
+          <div class="about-left">
+            <div style="padding-bottom: 20px;">
+              <p style=" color: var(--accent2); font-family: 'Montserrat', sans-serif;"><b>Team Members:</b></p>
+              <p>Joyson Estibeiro</p>
+            </div>
+          </div>
+          <div class="about-right">
+            <div style="padding-bottom: 20px;">
+              <p style=" color: var(--accent2); font-family: 'Montserrat', sans-serif;"><b>Affiliation:</b></p>
+              <p>Personal Project</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <!-- Tablet & Mobile -->
+  <div class="tablet_device_1000px">
+    <div class="grid_background_col">
+      <div class="proj-info-cont" style="text-align:left;">
+        <div class="about_tablet_cont">
+          <div class="about-tablet-left">
+            <div style="padding-bottom: 20px;">
+              <p style=" color: var(--accent2); font-family: 'Montserrat', sans-serif;"><b>Team Members:</b></p>
+              <p>Joyson Estibeiro</p>
+            </div>
+          </div>
+          <div class="about-tablet-right">
+            <div style="padding-bottom: 20px;">
+              <p style=" color: var(--accent2); font-family: 'Montserrat', sans-serif;"><b>Affiliation:</b></p>
+              <p>Personal Project</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--- Section 4: Contact Information --->
+  <!--- Footer --->
+  <div class="top_footer">
+    <p style="font-size: 24px; font-family: 'Montserrat', sans-serif;">Contact Me</p>
+    <!-- <p style="font-size: 16px; font-family: 'Montserrat', sans-serif; margin-left: 10px; margin-top: 4px; ">joysonestibeiro158@gmail.com</p> -->
+    <a href="https://linkedin.com/in/joysonestibeiro/"><i class="fa fa-linkedin"></i></a>
+    <a href="https://github.com/JoysonEstibeiro"><i class="fa fa-github"></i></a>
+    <a href="mailto:joysonestibeiro158@gmail.com"><i class="fa fa-envelope"></i></a>
+  </div>
+  <div class="bottom_footer">
+    <p><small>&copy; Copyright 2025, Joyson Estibeiro</small></p>
+  </div>
+  <script src="scripts/icon.js"></script>
+  <script src="scripts/scroll.js"></script>
+  <script src="scripts/slider.js"></script>
+  <script src="scripts/lazy-load.js"></script>
+  </body>
+</html>
