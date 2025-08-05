@@ -175,7 +175,7 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -200,9 +200,9 @@ html, body {
   #app {
   display: flex;
   flex-direction: column;
-  height: 92vh; /* fill below top bar */
+  height: calc(100dvh - 8vh); /* fill below top bar */
   width: 100vw;                /* important: not fit-content */
-  overflow: auto;          /* block internal scroll */
+  overflow-y: auto;         /* block internal scroll */
 }
 
 #map {
@@ -224,6 +224,7 @@ html, body {
     box-sizing: border-box;   
     justify-content: center;
     overflow-x: hidden;
+    overflow-y: auto;
   }
   #sidebar h2 {
     margin: 0 0 6px;
