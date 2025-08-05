@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Joyson Estibeiro">
+  <title>Stadiums & Nearest Pubs - London</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Leaflet CSS (CDN) -->
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="top-bar">
+    <h1>Stadiums And Nearest Pubs - London</h1>  
+  <!--<span style="font-size:1.5rem; font-weight:600; color:#364757;">Stadiums & Pubs Explorer</span>-->
+  </div>
+  <div id="app">
+    <aside id="sidebar">
+      <h2>Clubs</h2>
+      <div id="stadium-list"><!-- populated by main.js --></div>
+      <h3>Search Results</h3>
+      <div id="info">
+        <div id="summary"><!-- selection summary goes here --></div>
+      </div>
+    </aside>
+    <main id="map" aria-label="Map of London stadiums and nearby pubs"></main>
+  </div>
+
+  <!-- Leaflet JS (CDN) -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Turf.js (for client-side buffering/spatial tests) -->
+  <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+
+  <!-- App JS -->
+  <script src="main.js"></script>
+</body>
+</html>

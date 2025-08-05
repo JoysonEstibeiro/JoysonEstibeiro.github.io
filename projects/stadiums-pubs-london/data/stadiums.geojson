@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"name": "stadiums",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "1", "name": "Craven Cottage", "operator": "Fulham F.C." }, "geometry": { "type": "Point", "coordinates": [ -0.221679128221729, 51.474884068469969 ] } },
+{ "type": "Feature", "properties": { "id": "2", "name": "Stamford Bridge", "operator": "Chelsea F.C." }, "geometry": { "type": "Point", "coordinates": [ -0.191057811422684, 51.481665824937579 ] } },
+{ "type": "Feature", "properties": { "id": "3", "name": "The Den", "operator": "Millwall F.C." }, "geometry": { "type": "Point", "coordinates": [ -0.050924232635767, 51.485929843710259 ] } },
+{ "type": "Feature", "properties": { "id": "4", "name": "MATRADE Loftus Road Stadium", "operator": "Queens Park Rangers F.C." }, "geometry": { "type": "Point", "coordinates": [ -0.232113496398307, 51.509348701832785 ] } },
+{ "type": "Feature", "properties": { "id": "5", "name": "Emirates Stadium", "operator": "Arsenal F.C." }, "geometry": { "type": "Point", "coordinates": [ -0.108400154152097, 51.555042360771431 ] } },
+{ "type": "Feature", "properties": { "id": "6", "name": "Selhurst Park", "operator": "Crystal Palace F.C." }, "geometry": { "type": "Point", "coordinates": [ -0.085217558642202, 51.398242272223548 ] } },
+{ "type": "Feature", "properties": { "id": "7", "name": "White Hart Lane", "operator": "Tottenham Hotspur F.C." }, "geometry": { "type": "Point", "coordinates": [ -0.06625643577663, 51.604171202868784 ] } },
+{ "type": "Feature", "properties": { "id": "8", "name": "G-tech Community Stadium", "operator": "Brentford F.C." }, "geometry": { "type": "Point", "coordinates": [ -0.288880059218155, 51.490741623339325 ] } },
+{ "type": "Feature", "properties": { "id": "9", "name": "London Stadium", "operator": "West Ham United F.C." }, "geometry": { "type": "Point", "coordinates": [ -0.016580942299681, 51.538643793151827 ] } }
+]
+}
