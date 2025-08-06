@@ -1244,10 +1244,10 @@ img {vertical-align: middle;}
   margin: 20px;
   margin-top: 0px;
   float: left;
-  width: 600px;
-  height: 400px;
+  width: 510px;
+  height: 340px;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-  image-resolution: 300dpi;
+  image-resolution: 200dpi;
   position: relative;
   object-fit: cover;
   object-position: center ;

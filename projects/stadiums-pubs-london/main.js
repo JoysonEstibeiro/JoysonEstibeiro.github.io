@@ -50,7 +50,7 @@ legend.addTo(map);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png', {
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a> | Data: Stadiums and Pubs from <a href="https://overpass-turbo.eu/">OSM via Overpass Turbo</a>',
 	subdomains: 'abcd',
-	maxZoom: 18
+	maxZoom: 20
 }).addTo(map);
 
 // ----------------------------
