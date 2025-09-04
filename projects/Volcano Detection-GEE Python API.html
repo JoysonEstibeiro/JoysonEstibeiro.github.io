@@ -37,7 +37,7 @@
         </div>
         <div class="about-right">
           <div class="about-text">
-            <h2 style="text-align:center; padding-bottom: 5px; color: var(--darktext); font-size: 28px;font-weight: bold; font-family: 'Montserrat', sans-serif;">Detecting Volcanic Activity Using a Custom Google Earth Engine Python API script</h2>
+            <h2 style="text-align:center; padding-bottom: 5px; color: var(--darktext); font-size: 28px;font-weight: bold; font-family: 'Montserrat', sans-serif;">A Python Script to Trace Eruption History of Volcanic Sites Using Satellite Imagery.</h2>
           <h3 style="font-style: italic; text-align: center; font-weight:normal;"><i>Detecting scenes with potential Thermal anomalies from the bulk of Sentinel-2 data using the Normalized Hotspot Index (NHI)</i></h3>
           </div>
           <div class="button_buffer">
@@ -59,7 +59,7 @@
         </div>
         <div class="project-tablet-right">
           <div class="project-tablet-text">
-            <h2 style="text-align:center; padding-bottom: 5px; color: var(--darktext); font-size: 36px;font-weight: bold; font-family: 'Montserrat', sans-serif;">Detecting Volcanic Activity Using a Custom Google Earth Engine Python API script</h2>
+            <h2 style="text-align:center; padding-bottom: 5px; color: var(--darktext); font-size: 36px;font-weight: bold; font-family: 'Montserrat', sans-serif;">A Python Script to Trace Eruption History of Volcanic Sites Using Satellite Imagery.</h2>
           <h3 style="font-style: italic; text-align: center; font-weight:normal;"><i>Detecting scenes with potential Thermal anomalies from the bulk of Sentinel-2 data using the Normalized Hotspot Index (NHI)</i></h3>
           </div>
           <div class="button_buffer">
@@ -78,17 +78,18 @@
   <div style="max-width: 1600px; margin: 0 auto !important; float: none !important;">
   <div class="grid_background_col2">
     <p style="color: var(--darktext); font-family: 'Montserrat', sans-serif;"><b>Project Description:</b></p>
-    <p style="padding-bottom: 20px;">This project presents a custom Python script built using the Google Earth Engine (GEE) API to detect volcanic activity from Sentinel-2 imagery in user-defined areas and timeframes. By setting three key parameters i.e. (i) location, (ii) Date range, and (iii) NHI threshold, the script automates the processing and filtering of Sentinel-2 data.<br>
-It applies the Normalized Hotspot Index (NHI) to SWIR and NIR bands (B12, B11, B8A), based on the method proposed by Marchese et al. (2019), to identify thermal anomalies associated with volcanic activity. The script was run for several volcanic sites in Iceland (2020–2024) and the results include a detailed ArcGIS StoryMap highlighting time-series visualization of key eruption zones showcasing spatial patterns and impacts.<br>
+    <p style="padding-bottom: 20px;">This project presents a custom Python script built on the Google Earth Engine (GEE) API to trace volcanic activity from historic
+Sentinel-2 satellite data for a region of interest. It calculates the Normalized Hotspot Index (NHI) based on the method proposed by Marchese et al. (2019) using the SWIR and NIR bands of Sentinel-2 (B12, B11, B8A). By simply setting the (i) Site location, (ii) Date range, and (iii) NHI threshold, the workflow filters images with potential thermal anomalies associated with volcanic activity and helps visualise a timeline of eruption history for that site.<br>
+The script was run for several volcanic sites in Iceland (2020–2024) and the results are included in a detailed <a href="https://storymaps.arcgis.com/stories/30f23ccdc6dd4496a82025f572463d73" target="_blank" rel="noopener noreferrer">ArcGIS StoryMap</a> highlighting time-series visualization of key eruption zones showcasing spatial patterns and impacts.<br>
     <br>
     Data processing and filters used in the script include:<br>
     i) Loading Sentinel-2 Level 1C dataset (Top-of-atmosphere reflectances).<br>
     ii) Clipping dataset to Area of Interest (AOI).<br>
     iii) Attaching acquisition dates to each image. <br>
-    iv) Converting reflectance to radiance for bands of interest (Because thermal sensors measure emitted energy, not reflected sunlight).<br>
+    iv) Converting reflectance to radiance for bands of interest (Because thermal energy is best measured as emitted energy, not reflected sunlight).<br>
     v) Calculating and Adding NHI index Bands.<br>
     vi) Filtering scenes with Maximum B12 Radiance > 2 (Discriminates volcanic activity from cooler surfaces & Reduces false positives.<br>
-    vii) Filtering scenes using a threshold NHI value (e.g., 0.2) (To minimize false positives).<br>
+    vii) Filtering scenes using a threshold NHI value between -1 and 1 with values > 0 indicating thermal hotspots (Use higher values to minimize false positives, eg. 0.2).<br>
 
     </p>
     <p style="font-size: 14px;">
