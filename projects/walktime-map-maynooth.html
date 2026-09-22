@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Joyson Estibeiro | Web Map: Stadiums & Closest Pubs in London</title>
+    <title>Joyson Estibeiro | Walktime Web Map: Maynooth</title>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
@@ -33,16 +33,22 @@
     <div class="desktop">
       <div class="about_cont">
         <div class="about-left">
-          <img src="../joy_images/stadiums&pubs_Map.jpg" class="project-image">
+          <img src="../joy_images/walkability_map_Img_main.jpg" class="project-image">
         </div>
         <div class="about-right">
           <div class="about-text">
-            <h2 style="text-align:center; padding-bottom: 5px; color: var(--darktext); font-size: 28px;font-weight: bold; font-family: 'Montserrat', sans-serif;">Stadiums & Nearest Pubs – London</h2>
-          <h3 style="font-style: italic; text-align: center; font-weight:normal;"><i>Interactive Web Map using Leaflet.js to map major football Stadiums and their nearest Pubs in London.</i></h3>
+            <h2 style="text-align:center; padding-bottom: 5px; color: var(--darktext); font-size: 28px;font-weight: bold; font-family: 'Montserrat', sans-serif;">Walktime Web Map: Maynooth</h2>
+          <h3 style="font-style: italic; text-align: center; font-weight:normal;"><i>Interactive Web Map using Leaflet.js and OSRM to map walking-time to essential services, block by block, across the university town of Maynooth.</i></h3>
           </div>
           <div class="button_buffer">
-            <a class="button_blk" href="https://joysonestibeiro.github.io/projects/stadiums-pubs-london/">Interactive Web Map</a>
-          </div>          
+            <a class="button_blk" href="https://joysonestibeiro.github.io/Maynooth-Walktime-Map/">Interactive Web Map</a>
+          </div>
+          <div class="button_buffer">
+            <a class="button_blk" href="https://github.com/JoysonEstibeiro/Maynooth-Walktime-Map">GitHub Repo</a>
+          </div>
+          <div class="button_buffer">
+            <a class="button_blk" href="https://lnkd.in/p/dEABAvdQ">LinkedIn Post</a>
+          </div>
         </div>
       </div>
     </div>
@@ -52,15 +58,21 @@
     <div class="tablet_device_1000px">
       <div class="project_tablet_cont">
         <div class="project-tablet-left">
-          <img src="../joy_images/Jupyter Lab snippet- Iceland.jpg" class="project-tablet-image">
+          <img src="../joy_images/walkability_map_Img_main.jpg" class="project-tablet-image">
         </div>
         <div class="project-tablet-right">
           <div class="project-tablet-text">
-            <h2 style="text-align:center; padding-bottom: 5px; color: var(--darktext); font-size: 36px;font-weight: bold; font-family: 'Montserrat', sans-serif;">Stadiums & Nearest Pubs – London</h2>
-          <h3 style="font-style: italic; text-align: center; font-weight:normal;"><i>Interactive Web Map using Leaflet.js to map major football Stadiums and their nearest Pubs in London.</i></h3>
+            <h2 style="text-align:center; padding-bottom: 5px; color: var(--darktext); font-size: 36px;font-weight: bold; font-family: 'Montserrat', sans-serif;">Walktime Map: Maynooth</h2>
+          <h3 style="font-style: italic; text-align: center; font-weight:normal;"><i>Interactive Web Map using Leaflet.js and OSRM to map walking-time access to essential services, hex by hex, across Maynooth.</i></h3>
           </div>        
           <div class="button_buffer">
-            <a class="button_blk" href="https://arcg.is/10XuHy2">Interactive Web Map</a>
+            <a class="button_blk" href="https://joysonestibeiro.github.io/Maynooth-Walktime-Map/">Interactive Web Map</a>
+          </div>
+          <div class="button_buffer">
+            <a class="button_blk" href="https://github.com/JoysonEstibeiro/Maynooth-Walktime-Map">GitHub Repo</a>
+          </div>
+          <div class="button_buffer">
+            <a class="button_blk" href="https://lnkd.in/p/dEABAvdQ">LinkedIn Post</a>
           </div>
         </div>
       </div>
@@ -72,9 +84,18 @@
   <div style="max-width: 1600px; margin: 0 auto !important; float: none !important;">
   <div class="grid_background_col2">
     <p style="color: var(--darktext); font-family: 'Montserrat', sans-serif;"><b>Project Description:</b></p>
-    <p style="padding-bottom: 20px;">This project features an interactive web map built with Leaflet.js and HTML, mapping major football stadiums in London alongside pubs within a 1 km radius. Spatial data was sourced from OpenStreetMap (OSM) using Overpass Turbo.<br>
-     Users can explore the city by selecting a stadium from the sidebar, which zooms into its location and highlights nearby pubs. Pubs are displayed as points showing their names as popups for easy identification.The sidebar lists club names, provides a clickable interface, and displays a summary of the pubs located nearby, offering a spatial overview and a focused search experience.
-    </p>    
+    <p style="padding-bottom: 20px;">Interactive web map showing how far a neighbourhood in Maynooth is, on foot, from five kinds of essential/everyday services: Food & Drinks, Fitness, Supplies, Pharmacy and Healthcare (GP).<br>
+    Pick a service (or the average of all five) to colour the hexes by walking time. Click a hex to see the time and nearest service for each category, and to watch the walking route to the nearest one being traced.
+    </p>
+    <p style="color: var(--darktext); font-family: 'Montserrat', sans-serif;"><b>Tech Stack:</b></p>
+    <ul style="padding-bottom: 20px;">
+      <li>QGIS — visualisation and data processing</li>
+      <li>Python — data pulling and the OSRM routing pipeline</li>
+      <li>OSRM — walking-time routing engine, run locally in Docker</li>
+      <li>HTML/CSS/JavaScript (Leaflet) — the interactive web map</li>
+    </ul>
+    <p style="color: var(--darktext); font-family: 'Montserrat', sans-serif;"><b>Data Sources:</b></p>
+    <p style="padding-bottom: 20px;">OpenStreetMap</p>
   </div>
   </div>
   </div>
