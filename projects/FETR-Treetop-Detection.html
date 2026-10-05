@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Joyson Estibeiro | FETR-Treetop-Detection</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+    <!--- Navigation Bar --->
+<body>
+  <nav>
+    <div class="navbar" id="mynavbar">
+      <a href="../index.html">HOME</a>
+      <a href="../about.html">ABOUT ME</a>
+      <a href="../portfolio.html" class="active">PORTFOLIO</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </nav>
+  <!--- Section 1: Title --->
+  <div class="about_me_title">
+    <div class="about_me_text">
+      <h1>PORTFOLIO</h1>
+    </div>
+  </div>
+  <!--- Section 2: Project Title & Video --->
+  <!-- Desktop -->
+  <div style="background-color: var(--alternative)">
+  <div style="max-width: 1600px; margin: 0 auto !important; float: none !important;">
+  <div class="grid_background_col2">
+    <div class="desktop">
+      <div class="about_cont">
+        <div class="about-left">
+          <video src="../joy_images/broadleaf_mix_area.mp4" class="project-image" autoplay loop muted playsinline></video>
+        </div>
+        <div class="about-right">
+          <div class="about-text">
+            <h2 style="text-align:center; padding-bottom: 5px; color: var(--darktext); font-size: 28px;font-weight: bold; font-family: 'Montserrat', sans-serif;">Treetop Detection from Raster CHM - Testing Established Methods and a New Adaptation of the GTR Algorithm (Diószegi et al., 2024) for Mixed Linear Vegetation</h2>
+          <h3 style="font-style: italic; text-align: center; font-weight:normal;"><i>An R-based project documenting my experiments with individual treetop detection on 1 m resolution CHMs for heterogeneous vegetation along railway corridors, aimed at tree risk assessment and spatial distribution mapping. After testing popular methods like LM+VWF and GTR, I developed FETR-Only by adapting a discarded part of the GTR algorithm to capture subtle peaks both methods missed. The script outputs both GTR and FETR detections, so users can compare and choose what fits their data.</i></h3>
+          </div>
+          <div class="button_buffer">
+            <a class="button_blk" href="https://github.com/JoysonEstibeiro/FETR-Treetop-Detection">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <!-- Tablet & Mobile-->
+    <div class="tablet_device_1000px">
+      <div class="project_tablet_cont">
+        <div class="project-tablet-left">
+          <video src="../joy_images/broadleaf_mix_area.mp4" class="project-tablet-image" autoplay loop muted playsinline></video>
+        </div>
+        <div class="project-tablet-right">
+          <div class="project-tablet-text">
+            <h2 style="text-align:center; padding-bottom: 5px; color: var(--darktext); font-size: 36px;font-weight: bold; font-family: 'Montserrat', sans-serif;">Treetop Detection from Raster CHM</h2>
+          <h3 style="font-style: italic; text-align: center; font-weight:normal;"><i>An R-based project documenting my experiments with individual treetop detection on 1 m resolution CHMs for heterogeneous vegetation along railway corridors, aimed at tree risk assessment and spatial distribution mapping. After testing popular methods like LM+VWF and GTR, I developed FETR-Only by adapting a discarded part of the GTR algorithm to capture subtle peaks both methods missed. The script outputs both GTR and FETR detections, so users can compare and choose what fits their data.</i></h3>
+          </div>
+          <div class="button_buffer">
+            <a class="button_blk" href="https://github.com/JoysonEstibeiro/FETR-Treetop-Detection">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 4: Project Links -->
+  <div style="background-color: var(--alternative)">
+  <div style="max-width: 1600px; margin: 0 auto !important; float: none !important;">
+  <div class="grid_background_col2">
+    <p style="color: var(--darktext); font-family: 'Montserrat', sans-serif;"><b>Why This Project:</b></p>
+    <p style="padding-bottom: 20px;">Automating tree digitisation along railway lines saves significant time for risk assessment, even if results need some manual refinement. The goal is identifying every tree and shrub above 3 m that could fall across the tracks.</p>
+    <p style="padding-bottom: 20px;">Most CHM-based detection methods are designed for structured forests or well-spaced urban trees. Railway vegetation is a mix of tall broadleaves, conifers, and smaller side shrubs with overlapping canopies and irregular spacing.</p>
+    <p style="padding-bottom: 20px;">Using a 1 m resolution CHM with median smoothing, both LM + VWF and GTR missed smaller side trees. That gap led me to build FETR-Only, isolating a part of GTR's logic that the original discards, to better capture these smaller trees.</p>
+    <p style="color: var(--darktext); font-family: 'Montserrat', sans-serif;"><b>Tech Stack:</b></p>
+    <ul style="padding-bottom: 20px;">
+      <li>R (terra, sf, lidR) — Core scripting language for the detection pipeline</li>
+      <li>CloudCompare — Point cloud processing and CHM generation (DSM - DTM)</li>
+      <li>QGIS — Visual validation and comparison of detection results</li>
+    </ul>
+  </div>
+  </div>
+  </div>
+  <!--- Section 3: Project Information --->
+  <!-- Desktop -->
+  <div style="background-color: var(--lightmain)">
+  <div style="max-width: 1600px; margin: 0 auto !important; float: none !important;">
+  <div class="desktop">
+    <div class="grid_background_col">
+      <div class="proj-info-cont" style="text-align:left;">
+        <div class="about_cont">
+          <div class="about-left">
+            <div style="padding-bottom: 20px;">
+              <p style=" color: var(--accent2); font-family: 'Montserrat', sans-serif;"><b>Team Members:</b></p>
+              <p>Joyson Estibeiro</p>
+            </div>
+          </div>
+          <div class="about-right">
+            <div style="padding-bottom: 20px;">
+              <p style=" color: var(--accent2); font-family: 'Montserrat', sans-serif;"><b>Affiliation:</b></p>
+              <p>Personal Project</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <!-- Tablet & Mobile -->
+  <div class="tablet_device_1000px">
+    <div class="grid_background_col">
+      <div class="proj-info-cont" style="text-align:left;">
+        <div class="about_tablet_cont">
+          <div class="about-tablet-left">
+            <div style="padding-bottom: 20px;">
+              <p style=" color: var(--accent2); font-family: 'Montserrat', sans-serif;"><b>Team Members:</b></p>
+              <p>Joyson Estibeiro</p>
+            </div>
+          </div>
+          <div class="about-tablet-right">
+            <div style="padding-bottom: 20px;">
+              <p style=" color: var(--accent2); font-family: 'Montserrat', sans-serif;"><b>Affiliation:</b></p>
+              <p>Personal Project</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--- Section 4: Contact Information --->
+  <!--- Footer --->
+  <div class="top_footer">
+    <p style="font-size: 24px; font-family: 'Montserrat', sans-serif;">Contact Me</p>
+    <a href="https://linkedin.com/in/joysonestibeiro/"><i class="fa fa-linkedin"></i></a>
+    <a href="https://github.com/JoysonEstibeiro"><i class="fa fa-github"></i></a>
+    <a href="mailto:joysonestibeiro158@gmail.com"><i class="fa fa-envelope"></i></a>
+  </div>
+  <div class="bottom_footer">
+    <p><small>&copy; Copyright <span id="copyright-year"></span>, Joyson Estibeiro</small></p>
+<script>document.getElementById('copyright-year').textContent = new Date().getFullYear();</script>
+  </div>
+  <script src="scripts/icon.js"></script>
+  <script src="scripts/scroll.js"></script>
+  <script src="scripts/slider.js"></script>
+  <script src="scripts/lazy-load.js"></script>
+  </body>
+</html>
